@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lena Montaño - Book de Modelo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f8f8f8;
+      color: #111;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+      color: white;
+      padding: 60px 40px 40px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 3.2em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .header .subtitle {
+      font-size: 1.3em;
+      opacity: 0.9;
+      margin-top: 8px;
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+      background: #fff;
+    }
+    .info-block {
+      text-align: center;
+      min-width: 180px;
+    }
+    .info-block .label {
+      font-size: 0.9em;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .info-block .value {
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-top: 6px;
+    }
+    .photos {
+      padding: 0 40px 60px;
+    }
+    .photos h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin: 0 0 40px;
+      color: #222;
+      position: relative;
+    }
+    .photos h2:after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: #000;
+      display: block;
+      margin: 15px auto 0;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .photo-item {
+      background: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+      aspect-ratio: 3 / 4;          /* Proporción vertical elegante - puedes cambiar a 4/5 o 2/3 si prefieres */
+      position: relative;
+    }
+    .photo-item:hover {
+      transform: scale(1.03);
+    }
+    .photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;            /* Llena el espacio recortando lo necesario */
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+    .experience {
+      padding: 0 40px 60px;
+      text-align: center;
+    }
+    .experience h2 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+    .brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #333;
+    }
+    .brands span {
+      background: #f0f0f0;
+      padding: 10px 24px;
+      border-radius: 30px;
+    }
+    .footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.95em;
+    }
+    @media (max-width: 768px) {
+      .header { padding: 50px 20px 30px; }
+      .header h1 { font-size: 2.6em; }
+      .info { gap: 25px; padding: 30px 20px; }
+      .photos { padding: 0 20px 50px; }
+      .photo-grid { gap: 40px; }
+      .photo-item { aspect-ratio: 4 / 5; } /* un poco más alto en móvil para mejor vista */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Lena Montaño</h1>
+    <div class="subtitle">Modelo • 22 años • Cochabamba, Bolivia</div>
+  </div>
+
+  <div class="info">
+    <div class="info-block">
+      <div class="label">Edad</div>
+      <div class="value">22</div>
+    </div>
+    <div class="info-block">
+      <div class="label">Estatura</div>
+      <div class="value">1,66 m</div>
+    </div>
+    <div class="info-block">
+      <div class="label">Ubicación</div>
+      <div class="value">Cochabamba, Bolivia</div>
+    </div>
+  </div>
+
+  <div class="photos">
+    <h2>Portafolio</h2>
+    <div class="photo-grid">
+
+      <div class="photo-item">
+        <img src="/Users/elijah/Downloads/1.jpeg" alt="Lena Montaño - Sesión estudio leather top">
+      </div>
+
+      <div class="photo-item">
+        <img src="/Users/elijah/Downloads/5.jpeg" alt="Lena Montaño - Retrato casual con lentes">
+      </div>
+
+      <div class="photo-item">
+        <img src="/Users/elijah/Downloads/2.jpeg" alt="Lena Montaño - Casual urbano jeans">
+      </div>
+
+      <div class="photo-item">
+        <img src="/Users/elijah/Downloads/3.jpeg" alt="Lena Montaño - Foto adicional">
+      </div>
+
+      <div class="photo-item">
+        <img src="/Users/elijah/Downloads/4.jpeg" alt="Lena Montaño - Foto adicional">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="experience">
+    <h2>Experiencia con marcas</h2>
+    <div class="brands">
+      <span>Mendocina</span>
+      <span>Fair Play</span>
+      <span>Digestan</span>
+      <span>Uno</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    Lena Montaño © 2026 | Cochabamba, Bolivia | Disponible para colaboraciones
+  </div>
+
+</div>
+
+</body>
+</html>
